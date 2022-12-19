@@ -13,6 +13,12 @@ function App() {
     setpass(event.target.value);
     
   }
+  const getrequest = ()=>{
+    //Axios.get request(no URL) , after authentication send to home page
+  }
+  const postrequest = ()=>{
+    //Axios.post email and password (no URL) 
+  }
   
 
 return(
@@ -36,8 +42,8 @@ return(
   </div>
   
   <div className="twobut">
-  <button type="submit" class="btn btn-primary">Login</button>
-  <button type="submit" class="btn btn-primary">SignUp</button>
+  <button type="submit" class="btn btn-primary" onClick={getrequest}>Login</button>
+  <button type="submit" class="btn btn-primary" onClick={postrequest}>SignUp</button>
   </div>
 </form>
 
